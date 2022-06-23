@@ -1,0 +1,8 @@
+#quote {
+    grid-area: quote;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-style: italic;
+}

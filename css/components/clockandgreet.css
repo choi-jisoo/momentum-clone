@@ -1,0 +1,20 @@
+.center {
+    grid-area: clock;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#clock {
+    font-size: 1050%;
+    margin: 0;
+    font-weight: lighter;
+}
+
+#greeting {
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-size: 350%;
+    font-weight: lighter;
+}

@@ -22,12 +22,22 @@ function deleteToDo(event) {
 function paintToDo(todo) {
     const liOfToDo = document.createElement("li");
     liOfToDo.id = todo.id;
+    const toDoBox = document.createElement("div");
+    const label = document.createElement("label");
+    label.htmlFor = "0" + todo.id;
+    const checkBox = document.createElement("input")
+    checkBox.type = "checkbox";
+    checkBox.id = "0" + todo.id;
     const spanOfToDo = document.createElement("span");
     spanOfToDo.innerText = todo.text;
-    const btnOfToDo = document.createElement("button");
-    btnOfToDo.innerText = "❌";
+    const btnOfToDo = document.createElement("i");
+    btnOfToDo.classList.add("fa-solid");
+    btnOfToDo.classList.add("fa-xmark");
     btnOfToDo.addEventListener("click", deleteToDo);
-    liOfToDo.appendChild(spanOfToDo);
+    toDoBox.appendChild(checkBox);
+    toDoBox.appendChild(label);
+    toDoBox.appendChild(spanOfToDo);
+    liOfToDo.appendChild(toDoBox);
     liOfToDo.appendChild(btnOfToDo);
     toDoList.appendChild(liOfToDo);
 }

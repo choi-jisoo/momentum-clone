@@ -1,36 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/df51d10c91.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum App</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input required type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <main>
+      <form id="login-form" class="hidden">
+        <div id="login-form__content">
+          <div>Hello, what's your name?</div>
+          <div>
+            <input required maxlength="15" type="text" />
+          </div>
+        </div>
+      </form>
+
+      <section class="hidden">
+        <div class="top-bar">
+          <div class="top-bar__left">
+            <div><span>Links</span></div>
+            <form
+              method="get"
+              action="https://www.google.com/search"
+              method="GET"
+              class="search-form"
+            >
+              <div class="search-underline">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-input" type="text" name="q" />
+              </div>
+            </form>
+          </div>
+          <div class="top-bar__weather">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="center">
+          <h2 id="clock">00:00:00</h2>
+          <h1 id="greeting"></h1>
+        </div>
+
+        <div class="todo">
+          <form id="todo-form">
+            <div id="todo-form__content">
+              <div>Write your today's To Do and Press Enter</div>
+              <input required type="text" />
+            </div>
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+    </main>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
@@ -38,5 +74,6 @@
     <script src="js/todo.js"></script>
     <script src="js/apikey.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/cssevent.js"></script>
   </body>
 </html>
