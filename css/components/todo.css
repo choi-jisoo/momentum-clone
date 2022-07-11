@@ -17,6 +17,11 @@
     font-size: 150%;
 }
 
+#todo-form__content div {
+    cursor: default;
+
+}
+
 #todo-form__content input {
     color: white;
     border: none;

@@ -22,6 +22,7 @@
 
 .top-bar__left div span { 
     padding-right: 5px;
+    cursor: default;
 }
 
 .search-form {
@@ -63,4 +64,8 @@
 .search-input:focus {
     outline: none;
     color: white;
+}
+
+.top-bar__weather {
+    cursor: default;
 }

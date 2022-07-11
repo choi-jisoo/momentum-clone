@@ -1,6 +1,6 @@
 #login-form {
     z-index: 2;
-    position:relative;
+    position: relative;
     top: 42%;
 }
 
@@ -27,7 +27,7 @@
     width: 100%;
     border-bottom: 2px solid whitesmoke;
     background-color: transparent;
-    text-align: center;  
+    text-align: center;
 }
 
 #login-form__content input::placeholder {
@@ -48,7 +48,7 @@
 
 #login-form__content button:hover {
     cursor: pointer;
-    color: rgba(0,0,0,0.35);
+    color: rgba(0, 0, 0, 0.35);
     background-color: whitesmoke;
     border: 1.2px solid;
 }
