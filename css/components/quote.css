@@ -5,4 +5,5 @@
     align-items: flex-end;
     padding-bottom: 20px;
     font-style: italic;
+    cursor: default;
 }
